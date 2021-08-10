@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+def springBootVersion = '2.2.6.RELEASE'
+def lombokVersion = '1.18.10'
+
+group 'AppForK8sTest'
+version '1.0'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-data-rest:${springBootVersion}"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    implementation group: 'com.sun.xml.ws', name: 'jaxws-ri', version: '3.0.2', ext: 'pom'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
