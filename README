@@ -1,0 +1,2 @@
+docker build -t app-for-k8s-test-image .
+docker run -d -p 8090:8080 --name k8s-test-container1 app-for-k8s-test-image
