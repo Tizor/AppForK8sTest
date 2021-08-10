@@ -1,4 +1,7 @@
 server:
   port: 8080
-application:
-  name: Application for K8S testing
+
+spring:
+  basePackage: app
+  main:
+    allow-bean-definition-overriding: true
