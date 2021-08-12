@@ -46,3 +46,4 @@ metadata:
       image: tizor/app-for-k8s-test:1
       ports:
       - containerPort: 80
+ 
