@@ -39,9 +39,9 @@ spec:
     metadata:
       labels:
         app2: k8s-test-template
-    spec:
-      containers:
-      - name: k8s-test
-        image: tizor/app-for-k8s-test:1
-        ports:
-        - containerPort: 80
+ spec:
+  containers:
+    - name: k8s-test
+      image: tizor/app-for-k8s-test:1
+      ports:
+      - containerPort: 80
