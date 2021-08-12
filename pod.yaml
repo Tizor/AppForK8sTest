@@ -34,11 +34,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: k8s-test-selector
+      app1: k8s-test-selector
   template:
     metadata:
       labels:
-        app: k8s-test-template
+        app2: k8s-test-template
     spec:
       containers:
       - name: k8s-test
